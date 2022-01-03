@@ -4,6 +4,7 @@
     --main-color: rgb(71,74,81);
     --small-details-color: rgb(255, 204, 0);
     --main-text-color: rgb(255, 255, 255);
+    --content-width: 700px;
 }
 
 body {
@@ -78,13 +79,15 @@ header nav ul li a:hover {
 
 .divider {
     border-bottom: 2px solid var(--small-details-color);
-    width: 700px;
+    width: var(--content-width);
 }
 
 .blocks {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: var(--content-width);
 }
 
 .block {
@@ -107,4 +110,13 @@ header nav ul li a:hover {
 h2 {
     border-bottom: 1.5px solid var(--small-details-color);
     width: 80%;
+}
+
+.block section {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.block section p {
+    white-space: wrap;
 }
