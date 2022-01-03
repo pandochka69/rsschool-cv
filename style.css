@@ -26,14 +26,15 @@ body {
 }
 
 header,
-nav {
+nav, 
+footer {
     width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #333;
+    background-color: rgb(51, 51, 51);
 }
 
 header nav ul {
@@ -147,4 +148,28 @@ h2 {
     border-radius: 5px;
     width: 80%;
     background-color: rgba(125, 127, 131, 0.4);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 100px;
+
+    background-color: rgb(51, 51, 51);
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+}
+
+footer i, time {
+    color: var(--small-details-color);
+    font-size: 48px;
+}
+
+footer time {
+
 }
