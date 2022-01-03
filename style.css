@@ -80,3 +80,31 @@ header nav ul li a:hover {
     border-bottom: 2px solid var(--small-details-color);
     width: 700px;
 }
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block {
+    min-height: 150px;
+    height: auto;
+    width: 100%;
+    margin: 20px 0px;
+
+    border-radius: 15px;
+
+    background-color: rgba(101, 104, 110, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+h2 {
+    border-bottom: 1.5px solid var(--small-details-color);
+    width: 80%;
+}
