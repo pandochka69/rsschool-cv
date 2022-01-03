@@ -112,11 +112,12 @@ h2 {
     width: 80%;
 }
 
-.block section {
+.block .content {
     width: 80%;
     padding-bottom: 20px;
 }
 
-.block section p {
+.block .content p {
     white-space: wrap;
+}
 }
