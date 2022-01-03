@@ -79,22 +79,24 @@
             </article>
             <article id="example" class="block">
                 <h2>Code Example</h2>
-                <pre>
-                    <code>
-                    function count(string) {  
-                        let result = {};
-                        for(let i = 0; i &lt; string.length; i++){
-                            let a = result[string[i]];
-                            if(a) {
-                                result[string[i]] = a + 1;
-                            } else {
-                                result[string[i]] = 1;
-                            } 
-                        }
-                        return result;
-                    }
-                    </code>
-                </pre>
+                <blockquote>
+                    <pre>
+                        <code>
+function count(string) {  
+    let result = {};
+    for(let i = 0; i &lt; string.length; i++){
+        let a = result[string[i]];
+        if(a) {
+            result[string[i]] = a + 1;
+        } else {
+            result[string[i]] = 1;
+        } 
+    }
+    return result;
+}
+                        </code>
+                    </pre>
+                </blockquote>
             </article>
         </div>
     </main>

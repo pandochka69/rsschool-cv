@@ -5,6 +5,7 @@
     --small-details-color: rgb(255, 204, 0);
     --main-text-color: rgb(255, 255, 255);
     --content-width: 700px;
+    --content-small-width: 320px;
 }
 
 body {
@@ -87,15 +88,13 @@ header nav ul li a:hover {
 .blocks {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    width: var(--content-width);
+    align-items: center;  
 }
 
 .block {
     min-height: 150px;
     height: auto;
-    width: 100%;
+    width: var(--content-width);
     margin: 20px 0px;
 
     border-radius: 15px;
@@ -144,12 +143,6 @@ h2 {
     border-bottom: 1px solid var(--small-details-color);
 }
 
-#example pre {
-    border-radius: 5px;
-    width: 80%;
-    background-color: rgba(125, 127, 131, 0.4);
-}
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -165,11 +158,28 @@ footer img {
     width: auto;
 }
 
-footer i, time {
+footer i,
+time {
     color: var(--small-details-color);
     font-size: 48px;
 }
 
-footer time {
+@media screen and (max-width: 700px) {
+    .block {
+        width: var(--content-small-width);
+    }
 
+    .divider {
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .contacts-list a {
+        font-size: 12px;
+    }
 }
+
+​
