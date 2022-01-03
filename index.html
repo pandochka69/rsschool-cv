@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <title>CV: Mary Aleksanova</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a>
+                <li><a href="#about">About</a>
+                <li><a href="#skills">Skills</a>
+                <li><a href="#languages">Languages</a>
+                <li><a href="#contacts">Contacts</a>
+                <li><a href="#example">Code Example</a>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="home" class="profile">
+            <img src="./img/image.jpg" alt="Personal photo">
+            <h1>Mary Aleksanova</h1>
+            <div class="divider"></div>
+        </article>
+        <div class="blocks">
+            <article id="about" class="block">
+                <h2>About me</h2>
+                <div class="content">
+                    <p>My goal is to develop in the sphere of web development. I prioritize the reinforcement of
+                        theoretical knowledge with practice, for the best consolidation of skills.</p>
+                    <p>I havn’t commercial experience in this area, but I have pet projects, which created in the
+                        process of self-study.</p>
+                </div>
+            </article>
+            <article id="skills" class="block">
+                <h2>Skills</h2>
+                <div class="content">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES5, ES6)</li>
+                        <li>Git, GitHub</li>
+                        <li>VS Code</li>
+                        <li>Adobe Photoshop basic</li>
+                    </ul>
+                </div>
+            </article>
+            <article id="languages" class="block">
+                <h2>Languages</h2>
+                <div class="content">
+                    <ul>
+                        <li>English - A2</li>
+                        <li>Russian - Native</li>
+                    </ul>
+                </div>
+            </article>
+            <article id="contacts" class="block">
+                <h2>Contacts</h2>
+                <div class="content">
+                    <ul class="contacts-list">
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/mary-aleksanova"
+                                target="blank">https://www.linkedin.com/in/mary-aleksanova</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github-square"></i>
+                            <a href="https://github.com/pandochka69" target="blank">https://github.com/pandochka69</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article id="example" class="block">
+                <h2>Code Example</h2>
+                <blockquote>
+                    <pre>
+                        <code>
+function count(string) {  
+    let result = {};
+    for(let i = 0; i &lt; string.length; i++){
+        let a = result[string[i]];
+        if(a) {
+            result[string[i]] = a + 1;
+        } else {
+            result[string[i]] = 1;
+        } 
+    }
+    return result;
+}
+                        </code>
+                    </pre>
+                </blockquote>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/pandochka69" target="blank">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://rs.school/js/" target="blank">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RS School Logo" />
+        </a>
+        <time>2022</time>
+    </footer>
+</body>
+
+</html>
