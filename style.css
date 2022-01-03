@@ -142,3 +142,9 @@ h2 {
 .contacts-list li a:hover {
     border-bottom: 1px solid var(--small-details-color);
 }
+
+#example pre {
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(125, 127, 131, 0.4);
+}

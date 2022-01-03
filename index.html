@@ -33,8 +33,10 @@
             <article id="about" class="block">
                 <h2>About me</h2>
                 <div class="content">
-                    <p>My goal is to develop in the sphere of web development. I prioritize the reinforcement of theoretical knowledge with practice, for the best consolidation of skills.</p>
-                    <p>I havn’t commercial experience in this area, but I have pet projects, which created in the process of self-study.</p>
+                    <p>My goal is to develop in the sphere of web development. I prioritize the reinforcement of
+                        theoretical knowledge with practice, for the best consolidation of skills.</p>
+                    <p>I havn’t commercial experience in this area, but I have pet projects, which created in the
+                        process of self-study.</p>
                 </div>
             </article>
             <article id="skills" class="block">
@@ -65,7 +67,8 @@
                     <ul class="contacts-list">
                         <li>
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/mary-aleksanova" target="blank">https://www.linkedin.com/in/mary-aleksanova</a>
+                            <a href="https://www.linkedin.com/in/mary-aleksanova"
+                                target="blank">https://www.linkedin.com/in/mary-aleksanova</a>
                         </li>
                         <li>
                             <i class="fab fa-github-square"></i>
@@ -76,6 +79,22 @@
             </article>
             <article id="example" class="block">
                 <h2>Code Example</h2>
+                <pre>
+                    <code>
+                    function count(string) {  
+                        let result = {};
+                        for(let i = 0; i < string.length; i++){
+                            let a = result[string[i]];
+                            if(a) {
+                                result[string[i]] = a + 1;
+                            } else {
+                                result[string[i]] = 1;
+                            } 
+                        }
+                        return result;
+                    }
+                    </code>
+                </pre>
             </article>
         </div>
     </main>
